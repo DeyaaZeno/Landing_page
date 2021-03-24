@@ -1,0 +1,320 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Arial';
+}
+a{
+    text-decoration: none;
+}
+header{
+    background: url('../img/bg.jpg') no-repeat center center;
+    height: 600px;
+    background-size: cover;
+}
+header #topnav{
+    height: 60px;
+    background-color: #41658E;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 0 50px;
+}
+#topnav #logo{
+    float: left;
+    width: 30%;
+    padding-top: 15px;
+}
+#topnav #mainnav{
+    float: right;
+    width: 70%;
+    text-align: right;
+}
+#topnav .logoicon{
+    font-size: 30px;
+    color: #FFF;
+}
+#mainnav .navitem{
+    color: #FFF;
+    margin-left: 30px;
+    display: inline-block;
+    height: 60px;
+    padding: 20px 10px;
+}
+#mainnav .navitem:hover{
+    color: #000;
+}
+#mainnav .active{
+    background-color: #FFF;
+    color: #41658E;
+}
+/* head */
+#head{
+    padding-top:200px;
+}
+#head .sitetitle{
+    background: #41658E;
+    color: #FFF;
+    font-size: 50px;
+    width: 50%;
+    padding: 20px;
+    margin-left: 40px;
+}
+/* services */
+#services{
+    padding: 20px;
+    background-color: #EEE;
+    min-height: 500px; /*note this */
+    overflow: hidden;/*note this */
+    position: relative;
+}
+#services_sec .sec-head{
+    text-align: center;
+    color: #41658E;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+    font-size: 30px;
+}
+#services_sec .headhr{
+    width: 10%;
+    margin: auto;
+    border: 1px solid #41658E;
+    margin-bottom: 30px;
+}
+#services_sec .service{
+    float: left;
+    width: 32.33333%;
+    border: 1px solid #CCC;
+    border-radius: 8px;
+    padding: 20px;
+    height: 250px;
+    min-height: 300px;
+}
+#services_sec .service2, #services_sec .service3{
+    margin-left:1.5%;
+}
+.service .num{
+    width:50px;
+    height:50px;
+    background-color: #41658E;
+    color: #FFF;
+    font-weight: bold;
+    text-align:center;
+    font-size:30px;
+    border-radius: 50%;
+    line-height: 1.5;
+    margin-bottom:20px;
+    position: absolute;
+    top: 90px;
+}
+.service .service-name{
+    color: #41658E;
+    text-transform: capitalize;
+    margin: 20px auto 20px auto;
+    font-size:30px;
+    font-family: 'Arial';
+    font-size:20px;
+    letter-spacing: 1px;
+}
+.service .service-descr{
+    text-align: justify;
+    line-height: 1.5;
+    color: #6D5F5F;
+    font-family: 'Arial';
+}
+/* services box hover */
+#services_sec .service:hover{
+    border: 1px solid #CCC;
+    cursor:pointer;
+    background-color: #41658E;;
+}
+#services_sec .service:hover .num{
+    background-color: #FFF;
+    color: #41658E;
+}
+#services_sec .service:hover .service-name{
+    color: #FFF;
+}
+#services_sec .service:hover .service-descr{
+    color: #FFF;
+}
+/* clear */
+.clear{
+    clear: both;
+}
+.sec-head{
+    text-align: center;
+    font-size: 30px;
+    color: #FFF;
+    text-transform: capitalize;
+    padding: 15px 0 10px 0;
+    font-family: 'Arial';
+}
+#about-us .headhr{
+    width:10%;
+    border: 1px solid #FFF;
+    margin: 0  auto 30px auto;
+}
+#about-us{
+    background-color: #6085C9;
+    position: relative;
+    z-index: -1;
+}
+.about-info{
+    background-color: #6085C9;
+    padding: 10px 500px 100px 30px;
+    line-height: 2;
+    color: #FFF;
+    text-align: justify;
+}
+.about-image .box-img{
+    position: absolute;
+    border: 5px solid #FFF;
+}
+.about-image .box-back{
+    z-index: 1;
+    top: 200px;
+    right: 65px;
+    bottom: 161px;
+}
+.about-image .box-lastback{
+    z-index: 2;
+    top: 100px;
+    right: 178px;
+    bottom: 261px;
+}
+.about-image .box-front{
+    z-index: 3;
+    top: 280px;
+    right: 205px;
+    bottom: 81px;
+}
+main:hover .box-lastback{
+    border: 5px solid #EAEA31;
+    opacity: 0.7;
+    cursor: pointer;
+    z-index: 6;
+}
+main:hover .box-back{
+    border: 5px solid #EAEA31;
+    opacity: 0.7;
+    cursor: pointer;
+    z-index: 5;
+}
+main:hover .box-front{
+    border: 5px solid #EAEA31;
+    opacity: 0.7;
+    cursor: pointer;
+    z-index: 4;
+}
+/* footer */
+footer{
+    background: url('../img/bg.jpg') no-repeat center center;
+    height: 300px;
+    background-size: cover;
+}
+footer #footer{
+    background: rgba(2, 35, 74, 0.9);
+    height: 300px;
+    background-size: cover;
+    padding: 30px;
+    color: #FFF;
+    font-family: 'Arial';
+}
+#footer .side{
+    float: left;
+    width: 33.3333%;
+    padding: 20px;
+}
+#footer .side-title{
+    font-size: 14px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+.info-side .site-about{
+    line-height: 1.5;
+    margin-bottom: 15px;
+    font-size: 12px;
+}
+.info-side .social{
+    text-align: center;
+    margin-left: 65px;
+}
+.social .social-icon{
+    font-size: 22px;
+    margin-left: 7px;
+}
+#footer .quick-links .qlinks{
+    margin-left: 20px;
+}
+.qlinks .qlink-li{
+    margin-bottom: 8px;
+}
+.qlink-li .qlink-item{
+    color: #FFF;
+    font-size: 12px;
+}
+.qlink-li .qlink-item:hover{
+    color: #000;
+    text-decoration: underline;
+}
+.contact-form .inputf, .contact-form .inputarea, .contact-form .btn{
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 15px 20px;
+    border-radius: 8px;
+    border: 1px solid #CCC;
+    font-weight: bold;
+}
+.contact-form .inputf, .contact-form .inputarea{
+    text-indent: 15px
+}
+.contact-form .inputarea{
+    color: #716868;
+    resize: 12px; /*note this, it disable the resize of the textarea */
+}
+.contact-form .inputf:focus, .contact-form .inputarea:focus{
+    outline: 0;
+    border: 1px solid #41658E;
+}
+.contact-form .btn{
+    background-color: #41658E;
+    color: #FFF;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border: none;
+    font-weight: bold;
+}
+.contact-form .btn:hover{
+    background-color: #CCC;
+    color: #41658E;
+    cursor: pointer;
+}
+.contact-form .fas{
+    position: absolute;
+    top: 16px;
+    left: 12px;
+    color: #CCC;  
+    font-size: 13px; 
+}
+.contact-form .input-wrapper .send-icon{
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: 15px 0 0 210px;
+}
+.contact-form .input-wrapper{
+    position: relative; 
+}
+/* copyright */
+#copyright{
+    background-color: #545151;
+    color: #FFF;
+    text-align: center;
+    line-height: 3;
+    text-transform: capitalize;
+    font-size: 12px;
+    font-family: 'Arial';
+}
